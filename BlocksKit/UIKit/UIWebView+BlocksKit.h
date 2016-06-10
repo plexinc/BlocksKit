@@ -3,6 +3,8 @@
 //  BlocksKit
 //
 
+#if TARGET_OS_IOS
+
 #import <UIKit/UIKit.h>
 
 /** Block callbacks for UIWebView.
@@ -29,3 +31,5 @@
 @property (nonatomic, copy, setter = bk_setDidFinishWithErrorBlock:) void (^bk_didFinishWithErrorBlock)(UIWebView *webView, NSError *error);
 
 @end
+
+#endif

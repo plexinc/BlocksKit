@@ -3,6 +3,8 @@
 //  BlocksKit
 //
 
+#if TARGET_OS_IOS
+
 #import "NSObject+A2BlockDelegate.h"
 #import "NSObject+A2DynamicDelegate.h"
 #import "UIActionSheet+BlocksKit.h"
@@ -166,3 +168,5 @@
 }
 
 @end
+
+#endif

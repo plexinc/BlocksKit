@@ -3,6 +3,8 @@
 //  BlocksKit
 //
 
+#if TARGET_OS_IOS
+
 #import "A2DynamicDelegate.h"
 #import "NSObject+A2BlockDelegate.h"
 #import "UIWebView+BlocksKit.h"
@@ -77,3 +79,5 @@
 }
 
 @end
+
+#endif

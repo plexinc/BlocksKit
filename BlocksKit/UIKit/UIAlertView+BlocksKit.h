@@ -3,6 +3,8 @@
 //  BlocksKit
 //
 
+#if TARGET_OS_IOS
+
 #import <UIKit/UIKit.h>
 
 /** UIAlertView without delegates!
@@ -134,3 +136,5 @@
 @property (nonatomic, copy, setter = bk_SetShouldEnableFirstOtherButtonBlock:) BOOL (^bk_shouldEnableFirstOtherButtonBlock)(UIAlertView *alertView) NS_AVAILABLE_IOS(5_0);
 
 @end
+
+#endif

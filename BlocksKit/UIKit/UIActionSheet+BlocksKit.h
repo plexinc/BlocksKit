@@ -3,6 +3,8 @@
 //  BlocksKit
 //
 
+#if TARGET_OS_IOS
+
 #import <UIKit/UIKit.h>
 
 /** UIActionSheet without delegates!
@@ -126,3 +128,5 @@
 @property (nonatomic, copy, setter = bk_setDidDismissBlock:) void (^bk_didDismissBlock)(UIActionSheet *actionSheet, NSInteger buttonIndex);
 
 @end
+
+#endif
