@@ -3,7 +3,9 @@
 //  BlocksKit
 //
 
+#if TARGET_OS_IOS
 #import "UIAlertView+BlocksKit.h"
+
 #import "A2DynamicDelegate.h"
 #import "NSObject+A2BlockDelegate.h"
 #import "NSObject+A2DynamicDelegate.h"
@@ -226,5 +228,11 @@
 }
 
 @end
+<<<<<<< HEAD
 
 #pragma clang diagnostic pop
+||||||| parent of 82a140b... tvOS Support
+=======
+
+#endif
+>>>>>>> 82a140b... tvOS Support

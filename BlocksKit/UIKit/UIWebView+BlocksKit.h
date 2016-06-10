@@ -3,6 +3,8 @@
 //  BlocksKit
 //
 
+#if TARGET_OS_IOS
+
 #import "BKDefines.h"
 #import <UIKit/UIKit.h>
 
@@ -32,5 +34,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, setter = bk_setDidFinishWithErrorBlock:, nullable) void (^bk_didFinishWithErrorBlock)(UIWebView *webView, NSError *error);
 
 @end
+<<<<<<< HEAD
 
 NS_ASSUME_NONNULL_END
+||||||| parent of 82a140b... tvOS Support
+=======
+
+#endif
+>>>>>>> 82a140b... tvOS Support

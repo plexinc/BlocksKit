@@ -3,6 +3,8 @@
 //  BlocksKit
 //
 
+#if TARGET_OS_IOS
+
 #import <UIKit/UIKit.h>
 #import "BKDefines.h"
 
@@ -135,3 +137,5 @@
 @property (nonatomic, copy, setter = bk_SetShouldEnableFirstOtherButtonBlock:) BOOL (^bk_shouldEnableFirstOtherButtonBlock)(UIAlertView *alertView) BK_ALERT_CONTROLLER_DEPRECATED(5_0);
 
 @end
+
+#endif

@@ -3,6 +3,10 @@
 //  BlocksKit
 //
 
+#if TARGET_OS_IOS
+
+#import "NSObject+A2BlockDelegate.h"
+#import "NSObject+A2DynamicDelegate.h"
 #import "UIActionSheet+BlocksKit.h"
 #import "A2DynamicDelegate.h"
 #import "NSObject+A2DynamicDelegate.h"
@@ -184,3 +188,5 @@
 @end
 
 #pragma clang diagnostic pop
+
+#endif

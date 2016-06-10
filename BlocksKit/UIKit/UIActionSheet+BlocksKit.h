@@ -3,6 +3,8 @@
 //  BlocksKit
 //
 
+#if TARGET_OS_IOS
+
 #import <UIKit/UIKit.h>
 #import "BKDefines.h"
 
@@ -127,3 +129,5 @@
 @property (nonatomic, copy, setter = bk_setDidDismissBlock:) void (^bk_didDismissBlock)(UIActionSheet *actionSheet, NSInteger buttonIndex) BK_ALERT_CONTROLLER_DEPRECATED(2_0);
 
 @end
+
+#endif
