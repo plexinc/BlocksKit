@@ -5,6 +5,8 @@
 //  Contributed by Yas Kuraishi.
 //
 
+#if TARGET_OS_IOS
+
 #import <UIKit/UIKit.h>
 
 /** UIImagePickerController with block callback.
@@ -28,3 +30,5 @@
 @property (nonatomic, copy) void(^bk_didCancelBlock)(UIImagePickerController *);
 
 @end
+
+#endif
