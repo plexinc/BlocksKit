@@ -8,6 +8,8 @@
 
 @implementation UIView (BlocksKit)
 
+#if TARGET_OS_IOS
+
 - (void)bk_whenTouches:(NSUInteger)numberOfTouches tapped:(NSUInteger)numberOfTaps handler:(void (^)(void))block
 {
 	if (!block) return;
@@ -42,6 +44,8 @@
 {
 	[self bk_whenTouches:2 tapped:1 handler:block];
 }
+
+#endif
 
 - (void)bk_eachSubview:(void (^)(UIView *subview))block
 {

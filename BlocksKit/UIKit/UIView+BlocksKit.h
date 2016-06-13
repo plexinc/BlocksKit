@@ -16,6 +16,8 @@
  @warning UIView is only available on a platform with UIKit.
  */
 @interface UIView (BlocksKit)
+  
+#if TARGET_OS_IOS
 
 /** Abstract creation of a block-backed UITapGestureRecognizer.
 
@@ -59,6 +61,8 @@
  @see whenTouches:tapped:handler:
  */
 - (void)bk_whenDoubleTapped:(void (^)(void))block;
+
+#endif
 
 /** A convenience wrapper that non-recursively loops through the subviews of a view.
  
