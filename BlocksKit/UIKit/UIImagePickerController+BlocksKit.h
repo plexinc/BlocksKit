@@ -5,6 +5,9 @@
 //  Contributed by Yas Kuraishi.
 //
 
+
+#if TARGET_OS_IOS
+
 #import "BKDefines.h"
 #import <UIKit/UIKit.h>
 
@@ -33,3 +36,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif

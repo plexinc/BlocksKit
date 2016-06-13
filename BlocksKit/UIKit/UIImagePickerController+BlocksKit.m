@@ -3,7 +3,10 @@
 //  BlocksKit
 //
 
+#if TARGET_OS_IOS
+
 #import "UIImagePickerController+BlocksKit.h"
+
 #import "A2DynamicDelegate.h"
 #import "NSObject+A2DynamicDelegate.h"
 #import "NSObject+A2BlockDelegate.h"
@@ -53,3 +56,5 @@
 }
 
 @end
+
+#endif
