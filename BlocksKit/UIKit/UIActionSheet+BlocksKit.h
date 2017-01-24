@@ -44,14 +44,14 @@
  @param title The header of the action sheet.
  @return A newly created action sheet.
  */
-+ (instancetype)bk_actionSheetWithTitle:(NSString *)title BK_ALERT_CONTROLLER_DEPRECATED(2_0);
++ (instancetype)bk_actionSheetWithTitle:(NSString *)title BK_ALERT_CONTROLLER_DEPRECATED(2_0) NS_EXTENSION_UNAVAILABLE("Not available in extensions");
 
 /** Returns a configured action sheet with only a title and cancel button.
 
  @param title The header of the action sheet.
  @return An instantiated actionSheet.
  */
-- (instancetype)bk_initWithTitle:(NSString *)title BK_INITIALIZER BK_ALERT_CONTROLLER_DEPRECATED(2_0);
+- (instancetype)bk_initWithTitle:(NSString *)title BK_INITIALIZER BK_ALERT_CONTROLLER_DEPRECATED(2_0) NS_EXTENSION_UNAVAILABLE("Not available in extensions");
 
 ///-----------------------------------
 /// @name Adding buttons

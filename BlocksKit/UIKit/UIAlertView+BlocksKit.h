@@ -51,14 +51,14 @@
  
  @return The UIAlertView.
  */
-+ (instancetype)bk_showAlertViewWithTitle:(NSString *)title message:(NSString *)message cancelButtonTitle:(NSString *)cancelButtonTitle otherButtonTitles:(NSArray *)otherButtonTitles handler:(void (^)(UIAlertView *alertView, NSInteger buttonIndex))block BK_ALERT_CONTROLLER_DEPRECATED(2_0);
++ (instancetype)bk_showAlertViewWithTitle:(NSString *)title message:(NSString *)message cancelButtonTitle:(NSString *)cancelButtonTitle otherButtonTitles:(NSArray *)otherButtonTitles handler:(void (^)(UIAlertView *alertView, NSInteger buttonIndex))block BK_ALERT_CONTROLLER_DEPRECATED(2_0) NS_EXTENSION_UNAVAILABLE("Not available in extensions");
 
 /** Creates and returns a new alert view with only a title and cancel button.
 
  @param title The title of the alert view.
  @return A newly created alert view.
  */
-+ (instancetype)bk_alertViewWithTitle:(NSString *)title BK_ALERT_CONTROLLER_DEPRECATED(2_0);
++ (instancetype)bk_alertViewWithTitle:(NSString *)title BK_ALERT_CONTROLLER_DEPRECATED(2_0) NS_EXTENSION_UNAVAILABLE("Not available in extensions");
 
 /** Creates and returns a new alert view with only a title, message, and cancel button.
 
@@ -66,7 +66,7 @@
  @param message The message content of the alert.
  @return A newly created alert view.
  */
-+ (instancetype)bk_alertViewWithTitle:(NSString *)title message:(NSString *)message BK_ALERT_CONTROLLER_DEPRECATED(2_0);
++ (instancetype)bk_alertViewWithTitle:(NSString *)title message:(NSString *)message BK_ALERT_CONTROLLER_DEPRECATED(2_0) NS_EXTENSION_UNAVAILABLE("Not available in extensions");
 
 /** Returns a configured alert view with only a title, message, and cancel button.
  
@@ -74,7 +74,7 @@
  @param message The message content of the alert.
  @return An instantiated alert view.
  */
-- (instancetype)bk_initWithTitle:(NSString *)title message:(NSString *)message BK_INITIALIZER BK_ALERT_CONTROLLER_DEPRECATED(2_0);
+- (instancetype)bk_initWithTitle:(NSString *)title message:(NSString *)message BK_INITIALIZER BK_ALERT_CONTROLLER_DEPRECATED(2_0) NS_EXTENSION_UNAVAILABLE("Not available in extensions");
 
 ///-----------------------------------
 /// @name Adding buttons
