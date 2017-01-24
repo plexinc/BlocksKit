@@ -50,14 +50,14 @@
  
  @return The UIAlertView.
  */
-+ (UIAlertView*)bk_showAlertViewWithTitle:(NSString *)title message:(NSString *)message cancelButtonTitle:(NSString *)cancelButtonTitle otherButtonTitles:(NSArray *)otherButtonTitles handler:(void (^)(UIAlertView *alertView, NSInteger buttonIndex))block;
++ (UIAlertView*)bk_showAlertViewWithTitle:(NSString *)title message:(NSString *)message cancelButtonTitle:(NSString *)cancelButtonTitle otherButtonTitles:(NSArray *)otherButtonTitles handler:(void (^)(UIAlertView *alertView, NSInteger buttonIndex))block NS_EXTENSION_UNAVAILABLE("Not available in extensions");
 
 /** Creates and returns a new alert view with only a title and cancel button.
 
  @param title The title of the alert view.
  @return A newly created alert view.
  */
-+ (id)bk_alertViewWithTitle:(NSString *)title;
++ (id)bk_alertViewWithTitle:(NSString *)title NS_EXTENSION_UNAVAILABLE("Not available in extensions");
 
 /** Creates and returns a new alert view with only a title, message, and cancel button.
 
@@ -65,7 +65,7 @@
  @param message The message content of the alert.
  @return A newly created alert view.
  */
-+ (id)bk_alertViewWithTitle:(NSString *)title message:(NSString *)message;
++ (id)bk_alertViewWithTitle:(NSString *)title message:(NSString *)message NS_EXTENSION_UNAVAILABLE("Not available in extensions");
 
 /** Returns a configured alert view with only a title, message, and cancel button.
  
@@ -73,7 +73,7 @@
  @param message The message content of the alert.
  @return An instantiated alert view.
  */
-- (id)bk_initWithTitle:(NSString *)title message:(NSString *)message NS_REPLACES_RECEIVER;
+- (id)bk_initWithTitle:(NSString *)title message:(NSString *)message NS_REPLACES_RECEIVER NS_EXTENSION_UNAVAILABLE("Not available in extensions");
 
 ///-----------------------------------
 /// @name Adding buttons

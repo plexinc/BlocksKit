@@ -43,14 +43,14 @@
  @param title The header of the action sheet.
  @return A newly created action sheet.
  */
-+ (id)bk_actionSheetWithTitle:(NSString *)title;
++ (id)bk_actionSheetWithTitle:(NSString *)title NS_EXTENSION_UNAVAILABLE("Not available in extensions");
 
 /** Returns a configured action sheet with only a title and cancel button.
 
  @param title The header of the action sheet.
  @return An instantiated actionSheet.
  */
-- (id)bk_initWithTitle:(NSString *)title NS_REPLACES_RECEIVER;
+- (id)bk_initWithTitle:(NSString *)title NS_REPLACES_RECEIVER NS_EXTENSION_UNAVAILABLE("Not available in extensions");
 
 ///-----------------------------------
 /// @name Adding buttons
