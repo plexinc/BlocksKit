@@ -228,11 +228,7 @@
 }
 
 @end
-<<<<<<< HEAD
 
 #pragma clang diagnostic pop
-||||||| parent of 82a140b... tvOS Support
-=======
 
 #endif
->>>>>>> 82a140b... tvOS Support
