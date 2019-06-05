@@ -80,7 +80,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param block A block that returns a new value for a key/value pair.
  @return Returns a dictionary of the objects returned by the block.
  */
-- (NSDictionary<KeyType, ObjectType> *)bk_map:(id (^)(KeyType key, ObjectType obj))block;
+- (NSDictionary *)bk_map:(id (^)(KeyType key, ObjectType obj))block;
 
 /** Loops through a dictionary to find whether any key/value pair matches the block.
 

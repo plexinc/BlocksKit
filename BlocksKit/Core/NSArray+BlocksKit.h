@@ -91,7 +91,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param block A single-argument, object-returning code block.
  @return Returns an array of the objects returned by the block.
  */
-- (NSArray<ObjectType> *)bk_map:(id (^)(ObjectType obj))block;
+- (NSArray *)bk_map:(id (^)(ObjectType obj))block;
 
 /** Behaves like map, but doesn't add NSNull objects if you return nil in the block.
 

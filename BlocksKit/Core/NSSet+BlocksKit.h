@@ -87,7 +87,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param block A single-argument, object-returning code block.
  @return Returns a set of the objects returned by the block.
  */
-- (NSSet<ObjectType> *)bk_map:(id (^)(ObjectType obj))block;
+- (NSSet *)bk_map:(id (^)(ObjectType obj))block;
 
 /** Arbitrarily accumulate objects using a block.
 
