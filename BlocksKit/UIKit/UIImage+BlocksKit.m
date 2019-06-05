@@ -23,6 +23,8 @@
 
 @end
 
+#if TARGET_OS_IOS
+
 void BKImageWriteToSavedPhotosAlbum(UIImage *image, void(^completionBlock)(NSError *))
 {
     void *blockAsContext = (__bridge_retained void *)[completionBlock copy];
@@ -34,3 +36,5 @@ void BKSaveVideoAtURLToSavedPhotosAlbum(NSURL *videoURL, void(^completionBlock)(
     void *blockAsContext = (__bridge_retained void *)[completionBlock copy];
     UISaveVideoAtPathToSavedPhotosAlbum(videoURL.path, UIImage.class, @selector(bk_videoAtPath:didFinishSavingWithError:contextInfo:), blockAsContext);
 }
+
+#endif
