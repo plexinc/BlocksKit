@@ -57,10 +57,6 @@
 # endif
 #endif
 
-#if !defined(BK_ALERT_CONTROLLER_DEPRECATED)
-# define BK_ALERT_CONTROLLER_DEPRECATED(intro) NS_DEPRECATED_IOS(intro, 8_0, "The BlocksKit extensions for UIAlertView and UIActionSheet are deprecated. Use UIAlertController instead.");
-#endif
-
 #if !defined(BK_URL_CONNECTION_DEPRECATED)
 # define BK_URL_CONNECTION_DEPRECATED NS_DEPRECATED(10_5, 10_11, 2_0, 9_0, "The BlocksKit extensions for NSURLConnection are deprecated. Use NSURLSession instead.");
 #endif
