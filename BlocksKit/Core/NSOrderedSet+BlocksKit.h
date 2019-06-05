@@ -54,7 +54,7 @@ NS_ASSUME_NONNULL_BEGIN
  @return Returns the object, if found, or `nil`.
  @see bk_select:
  */
-- (nullable id)bk_match:(BOOL (^)(ObjectType obj))block;
+- (nullable ObjectType)bk_match:(BOOL (^)(ObjectType obj))block;
 
 /** Loops through an ordered set to find the objects matching the block.
 
@@ -62,7 +62,7 @@ NS_ASSUME_NONNULL_BEGIN
  @return Returns an ordered set of the objects found.
  @see bk_match:
  */
-- (NSOrderedSet *)bk_select:(BOOL (^)(ObjectType obj))block;
+- (NSOrderedSet<ObjectType> *)bk_select:(BOOL (^)(ObjectType obj))block;
 
 /** Loops through an ordered set to to find the objects not matching the block.
 
@@ -77,7 +77,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param block A single-argument, BOOL-returning code block.
  @return Returns an ordered set of all objects not found.
  */
-- (NSOrderedSet *)bk_reject:(BOOL (^)(ObjectType obj))block;
+- (NSOrderedSet<ObjectType> *)bk_reject:(BOOL (^)(ObjectType obj))block;
 
 /** Call the block once for each object and create an ordered set of the return
  values.
@@ -90,7 +90,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param block A single-argument, object-returning code block.
  @return Returns an ordered set of the objects returned by the block.
  */
-- (NSOrderedSet *)bk_map:(id (^)(ObjectType obj))block;
+- (NSOrderedSet<ObjectType> *)bk_map:(id (^)(ObjectType obj))block;
 
 /** Arbitrarily accumulate objects using a block.
 

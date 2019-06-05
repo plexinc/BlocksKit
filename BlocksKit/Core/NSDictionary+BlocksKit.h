@@ -51,14 +51,14 @@ NS_ASSUME_NONNULL_BEGIN
  @param block A BOOL-returning code block for a key/value pair.
  @return The value of the first pair found;
  */
-- (nullable id)bk_match:(BOOL (^)(KeyType key, ObjectType obj))block;
+- (nullable ObjectType)bk_match:(BOOL (^)(KeyType key, ObjectType obj))block;
 
 /** Loops through a dictionary to find the key/value pairs matching the block.
 
  @param block A BOOL-returning code block for a key/value pair.
  @return Returns a dictionary of the objects found.
  */
-- (NSDictionary *)bk_select:(BOOL (^)(KeyType key, ObjectType obj))block;
+- (NSDictionary<KeyType, ObjectType> *)bk_select:(BOOL (^)(KeyType key, ObjectType obj))block;
 
 /** Loops through a dictionary to find the key/value pairs not matching the block.
 
@@ -72,7 +72,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param block A BOOL-returning code block for a key/value pair.
  @return Returns a dictionary of all objects not found.
  */
-- (NSDictionary *)bk_reject:(BOOL (^)(KeyType key, ObjectType obj))block;
+- (NSDictionary<KeyType, ObjectType> *)bk_reject:(BOOL (^)(KeyType key, ObjectType obj))block;
 
 /** Call the block once for each object and create a dictionary with the same keys
  and a new set of values.
@@ -80,7 +80,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param block A block that returns a new value for a key/value pair.
  @return Returns a dictionary of the objects returned by the block.
  */
-- (NSDictionary *)bk_map:(id (^)(KeyType key, ObjectType obj))block;
+- (NSDictionary<KeyType, ObjectType> *)bk_map:(id (^)(KeyType key, ObjectType obj))block;
 
 /** Loops through a dictionary to find whether any key/value pair matches the block.
 

@@ -22,6 +22,6 @@
 
  @param block A void-returning code block that accepts no arguments.
  */
-- (void)bk_times:(void (^)())block;
+- (void)bk_times:(dispatch_block_t)block;
 
 @end

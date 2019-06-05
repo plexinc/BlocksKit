@@ -53,7 +53,7 @@ NS_ASSUME_NONNULL_BEGIN
  @return Returns the object if found, `nil` otherwise.
  @see bk_select:
  */
-- (nullable id)bk_match:(BOOL (^)(ObjectType obj))block;
+- (nullable ObjectType)bk_match:(BOOL (^)(ObjectType obj))block;
 
 /** Loops through a set to find the objects matching the block.
 
@@ -61,7 +61,7 @@ NS_ASSUME_NONNULL_BEGIN
  @return Returns a set of the objects found.
  @see bk_match:
  */
-- (NSSet *)bk_select:(BOOL (^)(ObjectType obj))block;
+- (NSSet<ObjectType> *)bk_select:(BOOL (^)(ObjectType obj))block;
 
 /** Loops through a set to find the objects not matching the block.
 
@@ -75,7 +75,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param block A single-argument, BOOL-returning code block.
  @return Returns an array of all objects not found.
  */
-- (NSSet *)bk_reject:(BOOL (^)(ObjectType obj))block;
+- (NSSet<ObjectType> *)bk_reject:(BOOL (^)(ObjectType obj))block;
 
 /** Call the block once for each object and create a set of the return values.
 
@@ -87,7 +87,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param block A single-argument, object-returning code block.
  @return Returns a set of the objects returned by the block.
  */
-- (NSSet *)bk_map:(id (^)(ObjectType obj))block;
+- (NSSet<ObjectType> *)bk_map:(id (^)(ObjectType obj))block;
 
 /** Arbitrarily accumulate objects using a block.
 
